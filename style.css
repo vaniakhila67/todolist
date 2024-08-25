@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #bfdbfe; /* Soft light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(image.jpg);
+    
+    background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.container {
+    background-color: azure; /* White background for the container */
+    padding: 30px;
+    border-radius: 12px;
+    margin-left:25%;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15); /* Softer shadow for a polished look */
+    width: 60%; /* Increased width for a more spacious layout */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.container:hover {
+    background-color:#ffffff; /* Slightly darker background on hover */
+    transform: scale(1.02); /* Slight scaling effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #2c3e50; /* Darker blue-grey for headings */
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#new-task-input {
+    width: 70%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7; /* Light grey border */
+    background-color: #ecf0f1; /* Soft grey-blue background */
+}
+
+#add-task-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: sandybrown; /* Vivid red for a standout add button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease; /* Smooth hover effect */
+}
+
+#add-task-btn:hover {
+    background-color: darkturquoise;
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #3498db; /* Professional blue for filter buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #dfe6e9; /* Light grey divider */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    background-color: #f8f9fa; /* Very light grey for task items */
+    border-radius: 6px; /* Rounded corners for task items */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #95a5a6; /* Neutral grey for completed tasks */
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    background-color: #8e44ad; /* Professional purple for action buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #71368a; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
